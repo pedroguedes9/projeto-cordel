@@ -57,12 +57,6 @@ section{
     
 }
 
-section pre{
-    font-family: var(--font3);
-    display: inline-block;
-    
-}
-
 section.normal {
     background-color: white;
 }
@@ -75,10 +69,25 @@ section.imagem {
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.61);
 }
 
-section.imagem > pre {
-    background-color: rgba(0, 0, 0, 0.26);
-    text-shadow: 2px 2px 0px black;
+section pre {
+    font-family: var(--font3);
+    display: inline-block;
+    white-space: pre-line;
+    /*
+    isso em cima serve para deixar as linhas separadas como num poema, para nao precisar usar o <br> a cada linha
+    */
+    padding: 10px;
+}
+
+section.imagem > pre{
     
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.479);
+    
+}
+
+section > pre#comfundo {
+background-color: rgba(0, 0, 0, 0.267);
+
 }
 
 section#parallax-1{
@@ -90,15 +99,11 @@ section#parallax-1{
 section#parallax-2{
     background-image: url(arquivos-necessarios/imagens/background002.jpg);
 
+
 }
 
-section pre {
 
-    white-space: pre-line;
-    /*
-    isso em cima serve para deixar as linhas separadas como num poema, para nao precisar usar o <br> a cada linha
-    */
-}
+
 footer {
     background-color: black;
     color: white;
