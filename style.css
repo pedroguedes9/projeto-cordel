@@ -72,7 +72,7 @@ section.imagem {
     background-size: cover;
     color: white;
     background-position: center center;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.308);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.61);
 }
 
 section.imagem > pre {
