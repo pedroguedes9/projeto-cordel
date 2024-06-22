@@ -1,56 +1,77 @@
 @charset "UTF-8";
 *{
     margin: 0px;
+    padding: 0px;
+}
+html, css {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover {
+    text-decoration: underline;
 }
 header {
     background-color: black;
     color: white;
-    padding: 10px;
+    
 }
 header > h1 {
+    padding-top: 50px;
     text-align: center;
     font-size: 3em;
+    font-variant: small-caps;
     
 }
 header > p {
     font-size: 1em;
     text-align: center;
+    padding-bottom: 50px;
+}
+section{
+    padding: 10vh 0 10vh 0;
+    line-height: 2em;
+    padding-left: 30px;
 }
 section.normal {
     background-color: white;
     height:1000px ;
-    font-size: 4em;
 }
-section#parallax-1{
-    background-image: url(arquivos-necessarios/imagens/background001.jpg);
+section.imagem {
     background-attachment: fixed;
     background-size: cover;
     height:1000px ;
-    font-size: 4.5em;
-    padding: 60px;
     color: white;
-
+}
+section.imagem > pre {
+    background-color: black;
+    width: 400px;
+}
+section#parallax-1{
+    background-image: url(arquivos-necessarios/imagens/background001.jpg);
+    
+    
 }
 
 section#parallax-2{
     background-image: url(arquivos-necessarios/imagens/background002.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    height:1000px ;
-    font-size: 4.5em;
-    padding: 60px;
-    color: white;
+
 }
-section > div {
-    background-color: rgba(0, 0, 0, 0.171);
-    width: 50%;
-    
-    
-}
+
 section pre {
 
     white-space: pre-line;
     /*
     isso em cima serve para deixar as linhas separadas como num poema, para nao precisar usar o <br> a cada linha
     */
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
