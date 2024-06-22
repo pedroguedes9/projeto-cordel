@@ -1,0 +1,56 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+}
+header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+header > h1 {
+    text-align: center;
+    font-size: 3em;
+    
+}
+header > p {
+    font-size: 1em;
+    text-align: center;
+}
+section.normal {
+    background-color: white;
+    height:1000px ;
+    font-size: 4em;
+}
+section#parallax-1{
+    background-image: url(arquivos-necessarios/imagens/background001.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height:1000px ;
+    font-size: 4.5em;
+    padding: 60px;
+    color: white;
+
+}
+
+section#parallax-2{
+    background-image: url(arquivos-necessarios/imagens/background002.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height:1000px ;
+    font-size: 4.5em;
+    padding: 60px;
+    color: white;
+}
+section > div {
+    background-color: rgba(0, 0, 0, 0.171);
+    width: 50%;
+    
+    
+}
+section pre {
+
+    white-space: pre-line;
+    /*
+    isso em cima serve para deixar as linhas separadas como num poema, para nao precisar usar o <br> a cada linha
+    */
+}
